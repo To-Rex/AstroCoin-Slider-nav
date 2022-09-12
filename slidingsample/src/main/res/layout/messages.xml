@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fon">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/wallet"
+            android:id="@+id/imageView12"
+            tools:ignore="ContentDescription"
+            app:layout_constraintStart_toStartOf="@+id/usersearchView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            />
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchprogressBar"
+            app:layout_constraintStart_toStartOf="@+id/listViewsearch"
+            app:layout_constraintEnd_toEndOf="@+id/listViewsearch"
+            app:layout_constraintBottom_toBottomOf="@+id/listViewsearch"
+            app:layout_constraintTop_toTopOf="@+id/listViewsearch"/>
+        <SearchView
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:id="@+id/usersearchView"
+            android:queryHint="search..."
+            android:contextClickable="true"
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/loginedittext"
+            tools:ignore="UnusedAttribute"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ListView
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:id="@+id/listViewsearch"
+            app:layout_constraintDimensionRatio="1:6"
+            app:layout_constraintTop_toBottomOf="@+id/usersearchView"
+            app:layout_constraintLeft_toLeftOf="@+id/usersearchView" android:layout_marginTop="12dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottomsheetdisigin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edibottomwallcament"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/loginedittext1"
+            android:elevation="0.1dp"
+            android:ems="10"
+            android:hint="@string/comment"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:maxLines="4"
+            android:minLines="3"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/view21"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="@+id/view21"
+            app:layout_constraintTop_toTopOf="@+id/view21"
+            tools:ignore="Autofill,RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/edibottomwalletamaund"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:background="@drawable/loginedittext1"
+            android:ems="10"
+            android:hint="@string/_0_asc"
+            android:inputType="number"
+            android:maxLength="20"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/view17"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/view17"
+            app:layout_constraintTop_toBottomOf="@+id/view18"
+            tools:ignore="Autofill,RtlSymmetry" />
+
+        <View
+            android:id="@+id/view24"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/hidecolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view25"
+            android:layout_width="80dp"
+            android:layout_height="6dp"
+            android:background="@drawable/shadovfon"
+            app:layout_constraintEnd_toEndOf="@+id/view17"
+            app:layout_constraintStart_toStartOf="@+id/view17"
+            app:layout_constraintTop_toTopOf="@+id/view23" />
+
+        <View
+            android:id="@+id/view23"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/hidecolor"
+            app:layout_constraintTop_toBottomOf="@+id/view24"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view17"
+            app:layout_constraintStart_toStartOf="@+id/view17"
+            app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/hidecolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <View
+            android:id="@+id/view17"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:background="@drawable/walletcard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+        <View
+            android:id="@+id/view18"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view22"
+            app:layout_constraintEnd_toEndOf="@+id/btnbottomshare"
+            app:layout_constraintTop_toTopOf="@+id/btnbottomshare"
+            app:srcCompat="@drawable/ic_export"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:id="@+id/view21"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/loginedittext1"
+            app:layout_constraintEnd_toEndOf="@+id/edibottomwalletamaund"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edibottomwalletamaund"
+            app:layout_constraintTop_toBottomOf="@+id/edibottomwalletamaund" />
+
+        <Button
+            android:id="@+id/btnbottomshare"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/butttonstyle"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/edibottomwalletamaund"
+            app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+        <View
+            android:id="@+id/view22"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnbottomshare" />
+
+        <ImageView
+            android:id="@+id/imgpastbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view17"
+            app:layout_constraintEnd_toEndOf="@+id/view17"
+            app:layout_constraintTop_toBottomOf="@+id/view15"
+            app:srcCompat="@drawable/ic_past"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/edibottomwalletid"
+            android:layout_width="257dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/loginedittext1"
+            android:hint="@string/wallet_address"
+            android:maxLength="50"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view17"
+            app:layout_constraintStart_toStartOf="@+id/view17"
+            app:layout_constraintTop_toBottomOf="@+id/view15"
+            tools:ignore="Autofill,TextFields" />
+
+        <TextView
+            android:id="@+id/txtwalletname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/connect"
+            app:layout_constraintStart_toStartOf="@+id/edibottomwalletid"
+            app:layout_constraintTop_toBottomOf="@+id/view17" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

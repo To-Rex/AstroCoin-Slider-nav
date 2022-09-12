@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Wallet</item>
+        <item>Search User</item>
+        <item>Settings</item>
+        <item>Info</item>
+        <item />
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_group_686</item>
+        <item>@drawable/ic_group_688</item>
+        <item>@drawable/ic_group_689</item>
+        <item>@android:drawable/ic_menu_info_details</item>
+        <item>0</item>
+        <item>@drawable/ic_group_691</item>
+    </array>
+</resources>

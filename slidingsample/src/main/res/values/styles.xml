@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="custombottomsheet" parent = "Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowBackground">@drawable/loginedittext1</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="actionBarTheme">@style/Theme.AppCompat.Dialog</item>
+    </style>
+
+</resources>
