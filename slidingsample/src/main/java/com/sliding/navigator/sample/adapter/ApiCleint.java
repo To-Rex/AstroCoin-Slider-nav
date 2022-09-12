@@ -13,7 +13,7 @@ public class ApiCleint {
 
         return new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://api.astrocoin.uz/api/")
+                .baseUrl("http://astrum.uubek.com/api/")
                 .client(okHttpClient)
                 .build();
         //.baseUrl("http://astrum.uubek.com/api/")
